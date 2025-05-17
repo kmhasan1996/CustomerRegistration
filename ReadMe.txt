@@ -3,7 +3,6 @@
 A RESTful API for managing customer registration, verification, and biometric login functionality.
 
 ## 📌 Features
-
 - Customer registration with PIN and biometric login support
 - Biometric login enable/disable
 - Email/phone verification code sending
@@ -11,16 +10,12 @@ A RESTful API for managing customer registration, verification, and biometric lo
 - Retrieve privacy policy
 
 ## 🚀 API Endpoints
-
 1. Register Customer
 
 **POST** `/api/Customers/register`
 
 Registers a new customer.
-
 #### Request Body (JSON)
-
-```json
 {
   "name": "John Doe",
   "icNumber": "123456789012",
@@ -47,10 +42,7 @@ Response
 3. Send Verification Code
 POST /api/Customers/send-verification
 
-Request Body
-json
-Copy
-Edit
+Request Body json
 {
   "customerId": "uuid",
   "emailOrPhone": "john@example.com",
@@ -62,10 +54,7 @@ Response
 4. Verify Code
 POST /api/Customers/verify
 
-Request Body
-json
-Copy
-Edit
+Request Body json
 {
   "customerId": "uuid",
   "emailOrPhone": "john@example.com",
@@ -82,7 +71,7 @@ Response
 200 OK – Returns the current privacy policy
 
 🛠️ Technologies
-ASP.NET Core / Web API
+ASP.NET Core 8.0 / Web API 
 OpenAPI (Swagger) v3.0.1
 
 
